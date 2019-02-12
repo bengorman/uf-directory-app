@@ -5,14 +5,14 @@ angular.module('listings', []).factory('Listings', function($http) {
     },
 
   	create: function(listing) {
-  	  return $http.post('https://murmuring-springs-45115.herokuapp.com/', listing);
+  	  return $http.post('https://murmuring-springs-45115.herokuapp.com/api/listings/', listing);
     },
 
     delete: function(id) {
   	   /**TODO
           return result of HTTP delete method
          */
-      return $http.delete('https://murmuring-springs-45115.herokuapp.com/' + id);
+      return $http.delete('https://murmuring-springs-45115.herokuapp.com/api/listings/' + id);
     }
   };
 
