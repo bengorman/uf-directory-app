@@ -1,7 +1,7 @@
 angular.module('listings', []).factory('Listings', function($http) {
   var methods = {
     getAll: function() {
-      return $http.get('https://murmuring-springs-45115.herokuapp.com/');
+      return $http.get('https://murmuring-springs-45115.herokuapp.com/api/listings');
     },
 
   	create: function(listing) {
