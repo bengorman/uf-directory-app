@@ -1,18 +1,18 @@
 angular.module('listings', []).factory('Listings', function($http) {
   var methods = {
     getAll: function() {
-      return $http.get('http://localhost:' + config.port + '/api/listings');
+      return $http.get('https://murmuring-springs-45115.herokuapp.com/');
     },
 
   	create: function(listing) {
-  	  return $http.post('http://localhost:' + config.port + '/api/listings', listing);
+  	  return $http.post('https://murmuring-springs-45115.herokuapp.com/', listing);
     },
 
     delete: function(id) {
   	   /**TODO
           return result of HTTP delete method
          */
-      return $http.delete('http://localhost:' + config.port + '/api/listings/' + id);
+      return $http.delete('https://murmuring-springs-45115.herokuapp.com/' + id);
     }
   };
 
